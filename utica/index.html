@@ -20,12 +20,19 @@
       color: var(--bs-dark);
       text-decoration: underline;
     }
+
     /* hero paragraph
     **************************/
     @media(min-width: 992px) {
       .w-lg-75 {
         width: 75%;
       }
+    }
+
+    /*  full viewport image
+    **************************/
+    .object-fit-cover {
+      object-fit: cover;
     }
   </style>
 </head>
@@ -65,6 +72,10 @@
   <p class="display-2 px-5 py-5 w-lg-75">
     Utica est un cabinet d'architecture basé à Copenhague, au Danemark.
   </p>
+
+  <!-- full viewport image -->
+  <img class="vh-100 w-100 object-fit-cover" src="https://via.placeholder.com/2462"
+    alt="2462x2462 image placeholder">
 
   <!-- Optional JavaScript; choose one of the two! -->
 
