@@ -1,29 +1,57 @@
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
   <div class="container-fluid px-5 py-2">
-    <a class="navbar-brand fs-2" href="#">Utica</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand fs-2" href="index.html">Utica</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link fw-light text-dark active" aria-current="page" href="#">Notre travail</a>
+          <a class="nav-link fw-light text-dark active" aria-current="page" href="index.html">Notre travail</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-light text-dark" href="#">À propos</a>
+          <a class="nav-link fw-light text-dark" href="pages/about.html">À propos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-light text-dark" href="#">Notre équipe</a>
+          <a class="nav-link fw-light text-dark" href="pages/team.html">Notre équipe</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-light text-dark" href="#">Presse</a>
+          <a class="nav-link fw-light text-dark" href="pages/press.html">Presse</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-light text-dark" href="#">Contact</a>
+          <a class="nav-link fw-light text-dark" href="pages/contact.html">Contact</a>
         </li>
       </ul>
+    </div>
+    <div class="offcanvas offcanvas-end vw-100 border-start-0" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand fw-normal fs-2 text-dark"
+            href="index.html">Utica</a></h5>
+        <button type="button" class="btn-close btn-lg text-reset" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column justify-content-evenly">
+        <ul class="navbar-nav justify-content-center align-items-center flex-grow-1">
+          <li class="nav-item py-2">
+            <a class="nav-link display-2 text-dark" href="index.html">Notre travail</a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link display-2 text-dark" href="pages/about.html">À propos</a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link display-2 text-dark" href="pages/team.html">Notre équipe</a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link display-2 text-dark" href="pages/press.html">Presse</a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link display-2 text-dark" href="pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
@@ -35,5 +63,11 @@
   .navbar-light .navbar-nav .show>.nav-link {
     color: var(--bs-dark);
     text-decoration: underline;
+  }
+
+  @media (min-width: 992px) {
+    .navbar-expand-lg .offcanvas {
+      display: none;
+    }
   }
 </style>
