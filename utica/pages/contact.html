@@ -84,8 +84,33 @@
         <i class="bi bi-instagram fs-5 me-2"></i>
         <i class="bi bi-twitter fs-5"></i>
       </div>
-      <div class="col border">
-
+      <div class="col mt-5 mt-md-0">
+        <form class="fw-light">
+          <span>Nom *</span>
+          <div class="d-flex justify-content-between pb-4">
+            <div>
+              <input type="text" class="form-control" id="firstNameInput" required>
+              <label for="firstNameInput" class="form-label small">Prénom</label>
+            </div>
+            <div>
+              <input type="text" class="form-control" id="lastNameInput" required>
+              <label for="lastNameInput" class="form-label small">Nom de famille</label>
+            </div>
+          </div>
+          <span>E-mail *</span>
+          <div class="pb-4">
+            <input type="email" class="form-control" id="emailInput" required>
+          </div>
+          <span>Objet *</span>
+          <div class="pb-4">
+            <input type="text" class="form-control" id="objectInput" required>
+          </div>
+          <span>Message *</span>
+          <div class="pb-4">
+            <textarea class="form-control" id="textareaInput" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark btn-lg px-5 py-4 rounded-0">Confirmer</button>
+        </form>
       </div>
     </div>
   </div>
