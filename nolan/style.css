@@ -23,3 +23,13 @@
 .object-fit-cover {
   object-fit: cover;
 }
+
+/*
+* navbar
+*/
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .offcanvas {
+    display: none;
+  }
+}

@@ -20,8 +20,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0">
       <div class="container-fluid px-5 py-4">
         <a class="navbar-brand fs-3" href="#">Nolan & Co</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
@@ -39,6 +39,34 @@
               <a class="nav-link text-light fw-light" href="#">Contact</a>
             </li>
           </ul>
+        </div>
+        <div class="offcanvas offcanvas-end vw-100 border-start-0 bg-dark" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand fw-normal fs-2 text-light"
+                href="index.html">Nolan & Co</a></h5>
+            <button type="button" class="btn-close btn-close-white btn-lg text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column justify-content-evenly">
+            <ul class="navbar-nav justify-content-center align-items-center flex-grow-1">
+              <li class="nav-item py-2">
+                <a class="nav-link display-2 text-light" href="index.html">Notre travail</a>
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link display-2 text-light" href="pages/about.html">À propos</a>
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link display-2 text-light" href="pages/team.html">Notre équipe</a>
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link display-2 text-light" href="pages/press.html">Presse</a>
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link display-2 text-light" href="pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -104,10 +132,14 @@
   <!-- footer -->
   <div class="d-flex flex-column flex-md-row justify-content-between bg-dark px-5 py-5">
     <ul class="list-group">
-      <li style="padding-left: 0;" class="list-group-item bg-dark border-0"><a class="fs-2 fw-light text-light" href="#">Notre travail</a></li>
-      <li style="padding-left: 0;" class="list-group-item bg-dark border-0"><a class="fs-2 fw-light text-light" href="#">Nos services</a></li>
-      <li style="padding-left: 0;" class="list-group-item bg-dark border-0"><a class="fs-2 fw-light text-light" href="#">Entreprise</a></li>
-      <li style="padding-left: 0;" class="list-group-item bg-dark border-0"><a class="fs-2 fw-light text-light" href="#">Contact</a></li>
+      <li style="padding-left: 0;" class="list-group-item bg-dark border-0"><a class="fs-2 fw-light text-light"
+          href="#">Notre travail</a></li>
+      <li style="padding-left: 0;" class="list-group-item bg-dark border-0"><a class="fs-2 fw-light text-light"
+          href="#">Nos services</a></li>
+      <li style="padding-left: 0;" class="list-group-item bg-dark border-0"><a class="fs-2 fw-light text-light"
+          href="#">Entreprise</a></li>
+      <li style="padding-left: 0;" class="list-group-item bg-dark border-0"><a class="fs-2 fw-light text-light"
+          href="#">Contact</a></li>
     </ul>
     <p class="text-light mt-5 mt-md-0">
       Conçu avec<br>
