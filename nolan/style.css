@@ -1,0 +1,25 @@
+/*
+* custom utilities
+*/
+
+@media(min-width: 768px) {
+  .w-md-35 {
+    width: 35%;
+  }
+  .w-md-40 {
+    width: 40%;
+  }
+  .w-md-50 {
+    width: 50%;
+  }
+  .w-md-60 {
+    width: 60%;
+  }
+  .w-md-75 {
+    width: 75%;
+  }
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
